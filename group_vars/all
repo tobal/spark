@@ -1,9 +1,9 @@
 user:
-    name: pigmonkey
+    name: tobal
     uid: 1000
-    group: pigmonkey
+    group: tobal
     shell: /usr/bin/zsh
-    email:  peter@havenaut.net
+    email: tobal17@gmail.com
     log:
         dir: log
         rotate: 8
@@ -17,7 +17,7 @@ interception:
         delay: 20000
 
 dotfiles:
-    url: git@github.com:pigmonkey/dotfiles.git
+    url: git@github.com:tobal/dotfiles.git
     destination: projects/dotfiles
     rcup_flags: -fx README.md
 
@@ -34,8 +34,7 @@ aur:
 
 ssh:
     port: 22
-    user_key: /root/id_rsa
-    enable_sshd: False
+    enable_sshd: True
 
 gnupg:
     enable_agent: True
@@ -61,7 +60,7 @@ network:
         - f74f2bd5-8748-4e1e-98f9-dae2dd44b916
 
 editors:
-    - gvim
+    - vim
 
 video_drivers:
     - libva-intel-driver
@@ -86,7 +85,6 @@ base_packages:
     - python-keyring
     - python-secretstorage
     - tig
-    - ruby
     - pv
     - minicom
     - jq
